@@ -152,6 +152,7 @@ int main()
         break;
     default :
         printf("\nOperacao invalida!");
+         break;
     }
     }while(op!=0);
     return 0;
