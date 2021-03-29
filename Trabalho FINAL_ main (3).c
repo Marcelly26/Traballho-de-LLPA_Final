@@ -77,7 +77,7 @@ float valor_total_viagem(  viagem vet2[], int num_cadastro, int num_noites)
 {
     float total=0;
     int i;
-   for(i=0;num_cadastro<=vet2[num_cadastro].diaria_hotel;num_cadastro++)
+   for(i=0;i<=vet2[num_cadastro].diaria_hotel;i++)
    {
        total = vet2[num_cadastro].valor_passagem + (vet2[num_cadastro].diaria_hotel)*num_noites;
    }
