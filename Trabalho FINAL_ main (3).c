@@ -70,6 +70,9 @@ void altera_viagem( viagem vet2[], int num_cadastro)
     printf("\nDia e mes do retorno: ");
     printf("Atualmente: %s",vet2[num_cadastro].mes_dia_retorno);
     gets(vet2[num_cadastro].mes_dia_retorno);
+    printf("\nCodigo Hotel:  ");
+    printf("Atualmente: %s", vet2[num_cadastro].codigo_hotel);
+    gets(vet2[num_cadastro].codigo_hotel);
     printf("\nValor Diaria Hotel: ");
     printf("Atualmente: %.2f",vet2[num_cadastro].diaria_hotel);
     scanf("%.2f", &vet2[num_cadastro].diaria_hotel);
@@ -91,7 +94,7 @@ float valor_total_viagem(  viagem vet2[], int num_cadastro, int num_noites)
 void imprime_viagem( viagem vet2[], int num_cadastro)
 {
     printf("\nCodigo hotel: ");
-    printf("%d \n", vet2[num_cadastro].codigo_hotel);
+    printf("%s \n", vet2[num_cadastro].codigo_hotel);
     printf("Origem: ");
     printf("%s \n",vet2[num_cadastro].origem);
     printf("Destino: ");
