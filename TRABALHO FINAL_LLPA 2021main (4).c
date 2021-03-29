@@ -3,7 +3,7 @@
 
 typedef struct
 {
-    char nome_cliente[2];
+    char nome_cliente[60];
     char cpf[12];
     char numero_cartao[20];
     int senha;
