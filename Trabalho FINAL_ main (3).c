@@ -11,7 +11,7 @@ typedef struct
 
 typedef struct
 {
-    char codigo_hotel[5];
+    
     float diaria_hotel;
     float valor_passagem;
     char origem [50];
@@ -36,11 +36,7 @@ void cadastro(Cliente vet[], int num_cadastro)
 
 void dados_viagem( viagem vet2[], int num_cadastro)
 {
-    getchar();
-    printf("\nCodigo hotel: ");
-    getchar();
-    scanf("%s", &vet2[num_cadastro].codigo_hotel);
-    getchar();
+  
     printf("Origem: ");
     getchar();
     gets(vet2[num_cadastro].origem);
@@ -70,15 +66,12 @@ void altera_viagem( viagem vet2[], int num_cadastro)
     printf("\nDia e mes do retorno: ");
     printf("Atualmente: %s",vet2[num_cadastro].mes_dia_retorno);
     gets(vet2[num_cadastro].mes_dia_retorno);
-    printf("\nCodigo Hotel:  ");
-    printf("Atualmente: %s", vet2[num_cadastro].codigo_hotel);
-    gets(vet2[num_cadastro].codigo_hotel);
     printf("\nValor Diaria Hotel: ");
-    printf("Atualmente: %.2f",vet2[num_cadastro].diaria_hotel);
-    scanf("%.2f", &vet2[num_cadastro].diaria_hotel);
+    printf("Atualmente: %f",vet2[num_cadastro].diaria_hotel);
+    scanf("%f", &vet2[num_cadastro].diaria_hotel);
     printf("\nValor Passagem: ");
-    printf("Atualmente: %.2f",vet2[num_cadastro].valor_passagem);
-    scanf("%.2f", &vet2[num_cadastro].valor_passagem);
+    printf("Atualmente: %f",vet2[num_cadastro].valor_passagem);
+    scanf("%f", &vet2[num_cadastro].valor_passagem);
 }
 float valor_total_viagem(  viagem vet2[], int num_cadastro, int num_noites)
 {
@@ -93,8 +86,7 @@ float valor_total_viagem(  viagem vet2[], int num_cadastro, int num_noites)
 }
 void imprime_viagem( viagem vet2[], int num_cadastro)
 {
-    printf("\nCodigo hotel: ");
-    printf("%s \n", vet2[num_cadastro].codigo_hotel);
+    
     printf("Origem: ");
     printf("%s \n",vet2[num_cadastro].origem);
     printf("Destino: ");
@@ -105,8 +97,8 @@ void imprime_viagem( viagem vet2[], int num_cadastro)
     printf("%s \n", vet2[num_cadastro].mes_dia_retorno);
     printf("Valor Diaria Hotel: ");
     printf("%.2f \n", vet2[num_cadastro].diaria_hotel);
-    printf("Valor Passagem: ");
-    printf("%.2f",vet2[num_cadastro].valor_passagem);
+    printf("\nValor Passagem: ");
+    printf("%.2f\n",vet2[num_cadastro].valor_passagem);
 }
 
 int main()
