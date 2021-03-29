@@ -101,9 +101,9 @@ void imprime_viagem( viagem vet2[], int num_cadastro)
     printf("Dia e mes do retorno: ");
     printf("%s \n", vet2[num_cadastro].mes_dia_retorno);
     printf("Valor Diaria Hotel: ");
-    printf("%f \n", vet2[num_cadastro].diaria_hotel);
+    printf("%.2f \n", vet2[num_cadastro].diaria_hotel);
     printf("Valor Passagem: ");
-    printf("%f",vet2[num_cadastro].valor_passagem);
+    printf("%.2f",vet2[num_cadastro].valor_passagem);
 }
 
 int main()
@@ -163,6 +163,7 @@ int main()
         break;
     default:
         printf("\nOperacao invalida!");
+        break;
     }
     }while(op!=6);
     return 0;
