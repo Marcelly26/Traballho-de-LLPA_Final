@@ -134,7 +134,7 @@ int main()
     case 3:
         printf("\nDigite o cadastro da viagem: ");
         scanf("%d", &i);
-        printf("\nDigite o numero de noites que pretende ficar ospedado");
+        printf("\nDigite o numero de noites que pretende ficar hospedado");
         scanf("%d", &num_noites);
         v_viagem=valor_total_viagem(vet2, i, num_noites);
         printf("\nValor total da viagem: %f", v_viagem);
